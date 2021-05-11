@@ -102,6 +102,10 @@ public class playerController : MonoBehaviour
             _firstTime = true;
         }
 
+        if (rb.velocity.y < -15f)
+        {
+            playerHealth.Damage(2f);
+        }
 
     }
 
